@@ -1,0 +1,60 @@
+*** Note *** 
+=============
+Example codes are provided for each topic covered. Note that Each program folders 
+name starts with same number mentioned for each topics.
+
+=====================================================================================
+===================================== TOPICS ========================================
+=====================================================================================
+Basics:
+=======
+* Storage classes
+* Storage classifiers
+* Memory segments
+* Pass by value
+* Reference
+* Pass by reference
+* Structures
+
+Pointers & References
+=====================
+1. Pointers in C and C++ (Introduction, Arithmetic and Array)
+	1. operator &
+	2. operator *
+	3. Pointer Expressions and Pointer Arithmetic (++, --, +, +=, -, -=)
+	4. Array Name as Pointers 
+	5. Pointers and Multidimensional Arrays
+
+2. Array Decay in C++
+	1. Array Decay
+	2. How to prevent Array Decay
+	
+3. Opaque Pointer
+
+4. References
+	1. Reference with pgms
+	2. References vs Pointers
+
+5. References refer to invalid location
+
+6. Pass arguments by reference or pointer
+	1. modify local variables of the caller function
+	2. Passing large sized arguments
+	3. Avoid Object Slicing
+	4. Achieve Run Time Polymorphism in a function
+
+7. Dangling, Void , Null and Wild Pointers
+	Dangling
+	1. De-allocation of memory
+	2. Function Call
+	3. Variable goes out of scope
+
+        Wild
+
+	Void
+
+	Null
+	1. NULL vs Uninitialized pointer
+	2. NULL vs Void Pointer
+
+8. Pointers vs References in C++
