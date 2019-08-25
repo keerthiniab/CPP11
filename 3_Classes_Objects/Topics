@@ -1,0 +1,28 @@
+*** Note ***
+
+Classes & Objects:
+==================
+1. Object Oriented Programming Basics
+	What Are Class & Object?
+2. Class, Constructor & Destructor
+	1. When is destructor called? (4)
+	2. How destructors are different from a normal member function?
+	3. Can there be more than one destructor in a class?
+	4. When do we need to write a user-defined destructor?
+	5. Can a destructor be virtual?
+3. Structures
+4. Non-static Data Member Initializers (C++11)
+5. this Pointer
+6. Constant Member Functions
+7. Static Class Members
+8. Copy Constructor
+ 	1. When is copy constructor called? (4)
+	2. When is user-defined copy constructor needed?
+	3. Default constructor & shallow copy.
+	4. Copy constructor vs Assignment Operator
+	5. Can we make copy constructor private?
+	6. Why argument to a copy constructor must be passed as a reference?
+	7. Why argument to a copy constructor should be const?
+	8. When do we use Initializer List in
+9. Delegating Constructors (C++11)
+10. Default & Deleted Functions (C++11)
