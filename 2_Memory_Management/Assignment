@@ -1,0 +1,8 @@
+=====================================================================================
+===================================== Hands-on ======================================
+=====================================================================================
+
+1. C++ program to illustrate dynamic allocation and deallocation of memory using new and delete
+2. Program to illustrate malloc, calloc , realloc, free - check memory initialisation  
+3. deallocate memory without using free()
+4. valgrind for memory leak

@@ -1,0 +1,31 @@
+*** Note *** 
+=============
+Refer Example codes in "pgm" folder
+
+=====================================================================================
+===================================== TOPICS ========================================
+=====================================================================================
+Dynamic Memory Allocation:
+==========================
+1. Compiler allocated memory
+2. Dynamic memory allocation
+3. Applications (2)
+4. malloc
+5. calloc
+6. free 
+7. re-alloc
+8. calloc() versus malloc()
+9. no size is passed to free
+10. Memory Leak
+11. Operator - new
+	1. Syntax
+	2. Initialise memory
+	3. Allocate block of memory
+	4. Normal Array Declaration vs Using new (de-allocation and memory storage)
+	5. when Memory is not available during runtime for new (Exception ==> std::bad_alloc / nothrow)
+12. Operator - delete
+13. Malloc vs New
+14. Free store vs heap
+15. Delete vs free
+16. std::get_temporary_buffer in C++
+17. 2D array
