@@ -1,0 +1,82 @@
+*** Note *** 
+=============
+Example codes are provided for each topic covered. Note that Each program / folders 
+name starts with same number mentioned for each topics.
+
+Basics of C++:
+==============
+1. What is C++?
+	Statically typed
+	Compiled
+	General-purpose
+	Case-sensitive
+	Free-form
+	Procedural Programming
+	Object-oriented Programming
+	Generic Programming	
+ 
+2. First C++ Program
+
+3. C++ Compilation Process ( g++ -save-temps -Wall 3_pgm1.cpp -o 3_pgm1 )
+	Pre-processing
+	Compilation
+	Assembly
+	Linking
+
+4. Primitive Types & Variables
+	* Integer
+	* Character
+	* Boolean
+	* Floating Point
+	* Double Floating Point
+	* Valueless or Void
+	* Wide Character
+
+5. Basic Input/Output
+	Input Stream
+	Output Stream
+	iostream
+	iomanip
+	fstream	
+
+6. Functions Basics & Overview of Debugging
+	* Functions - Pass by Value, Pass by Reference
+	* Default arguments
+	* Inline functions
+	* Inline vs macros - gcc –E file_name.c
+	* Return from void function in C++
+	* Return multiple values from function - tuple & pair
+
+7. Uniform Initialization (C++11) 
+
+8. Pointers & Reference 
+
+9. Reference Vs Pointer 
+
+10. Const Qualifier & Compound Types 
+
+11. Automatic Type Inference (C++11) 
+
+12. Range-Based Loop 
+
+13. Function Overloading 
+
+14. Default Function Arguments 
+
+15. Inline Functions 
+
+16. Function Pointers 
+
+17. Namespace
+	Accessing and creating header file
+	Extending namespace and Unnamed namespace
+
+	Different ways to access namespace
+	1. Scope resolution operator
+	2. “using” directive
+
+	Nested Namespaces
+	Namespace Aliasing
+	Inline namespaces
+
+	Use of Inline and using directive in nested classes

@@ -1,0 +1,20 @@
+ASSIGNMENTS:
+============
+1. Write swap function in C++ using reference
+2. Write swap function in C++ using pointers
+3. Write C++ a program TO create an array of 5 elements using uniform initialisation, and print array elements using range-based loop
+4. C++ Program to illustrate Automatic Type Inference (using auto)
+5. Program to write Sum() function to sum max 4 values using default arguments
+6. Program to get upper round off and lower round off of a double variable
+7. C++ Program to 
+	* print the address of variable
+	* declare a pointer and assign it to point to a variable
+	* print the value of pointer
+	* print value pointed by pointer
+	* Program to change value pointed by pointer
+8. Write a function to convert string to number, string to float Eg: i/p = "123456789" o/p = 123456789
+9. Program to print int, float, double, char values using Function overloading
+10. Write a program to call function using function pointers
+11. Print all the elements of array using pointers
+	int nums[2][3]  =  { {16, 18, 20}, {25, 26, 27} };
+12. Compund types example program

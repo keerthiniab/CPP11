@@ -1,0 +1,366 @@
+*** Note *** 
+=============
+Example codes are provided for each topic covered. Note that Each program / folders 
+name starts with same number mentioned for each topics.
+
+CPP_Basics:
+===========
+1. What is C++?	
+C++ is a programming language developed by Bjarne Stroustrup in 1979 at Bell Labs. 
+It is a superset of C, and that virtually any legal C program is a legal C++ program. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+
+It is a language that is:
+=========================
+* Statically typed: 
+	A programming language is claimed to use static typing when type checking is performed during compile-time as opposed to run-time.
+* Compiled: 
+	A compiled language is a programming language whose implementations are typically compilers 
+	(translators that generate machine code from source code), and  not interpreters 
+	(step-by-step executors of source code, where no pre-runtime translation takes place).
+* General-purpose: 
+	A general-purpose language could be a language that is generally applicable across application domains, and lacks specialized options 
+	for a specific domain. This is in contrast to a domain-specific language (DSL), which is specialized to a particular application domain.
+* Case-sensitive: 
+	C++ is case sensitive, ie, all identifiers, keywords, etc mean different things when they are in the different case.
+* Free-form: 
+	A free-form language is a programming language in which the positioning of characters on the page in program text is insignificant.
+* Procedural Programming: 
+	A procedural programming language is an important programming language whose programs have the ability to be primarily structured in terms of reusable 		  procedures, e.g. subroutines and/or functions.
+* Object-oriented Programming: 
+	Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
+* Generic Programming: 
+	Generic programming is a style of computer programming in which algorithms are written in terms of types to-be-specified-later that are then instantiated when needed for specific types provided as parameters.
+
+===================================================================
+Programming is basically giving certain instructions to the computer. 
+
+* Machine Language : 
+At the beginning of the computing era, programming was usually limited to machine language programming. Machine language means those sets of instructions that are specific to a particular machine or processor, which are in the form of 0’s and 1’s. These are sequences of bits (0100110…). But it’s quite difficult to write a program or develop software in machine language.
+
+* Assembly Language : It’s actually impossible to develop software used in today’s scenarios with sequences of bits. This was the main reason programmers moved on to the next generation of programming languages, developing assembly languages, which were near enough to the English language to easily understand. These assembly languages were used in microprocessors. With the invention of the microprocessor, assembly languages flourished and ruled over the industry, but it was not enough. Again, programmers came up with something new, i.e., structured and procedural programming.
+
+* Structured Programming : 
+The basic principle of the structured programming approach is to divide a program into functions and modules. The use of modules and functions makes the program more understandable and readable. It helps to write cleaner code and to maintain control over the functions and modules. This approach gives importance to functions rather than data. It focuses on the development of large software applications, for example, C was used for modern operating system development. The programming languages: PASCAL (introduced by Niklaus Wirth) and C (introduced by Dennis Ritchie) follow this approach.
+
+* Procedural Programming Approach –
+This approach is also known as the top-down approach. In this approach, a program is divided into functions that perform specific tasks. This approach is mainly used for medium-sized applications. Data is global, and all the functions can access global data. The basic drawback of the procedural programming approach is that data is not secured because data is global and can be accessed by any function. Program control flow is achieved through function calls and goto statements. The programming languages: FORTRAN (developed by IBM) and COBOL (developed by Dr Grace Murray Hopper) follow this approach. 
+
+* The Object-Oriented Programming (OOP) Approach:
+The OOP concept was basically designed to overcome the drawback of the above programming methodologies, which were not so close to real-world applications
+Object-oriented programming (OOP) is nothing but that which allows the writing of programs with the help of certain classes and real-time objects. We can say that this approach is very close to the real-world and its applications because the state and behaviour of these classes and objects are almost the same as real-world objects
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+2. First C++ Program 
+// Simple C++ program to display "Hello World" 
+
+// Header file for input output functions 
+#include<iostream> 
+
+using namespace std; 
+
+// main function - 
+// where the execution of program begins 
+int main() 
+{ 
+	// prints hello world 
+	cout<<"Hello World"; 
+	
+	return 0; 
+} 
+
+* A compiler is a computer program which converts high-level language into machine understandable low-level language
+* For compiling a C++ program we will need a C++ compiler which will convert the source code written in C++ into machine codes
+
+Linux Installation of GCC Compiler :
+====================================
+sudo apt-get update   
+       
+sudo apt-get install GCC // This command will install the GCC compiler on your system
+
+sudo apt-get install build-essential  // This command will install all the libraries which are required to compile and run a C++ program
+
+g++ --version // To check version of GCC compiler
+
+Compiling cpp file in Linux:
+----------------------------
+g++ filename.cpp -o any-name // g++ filename.cpp -o filename
+
+
+Windows Installation: 
+=====================
+There are lots of IDE available for windows operating system which you can use to work easily with C++ programming language. One of the popular IDE is Code::Blocks
+* After successfully installing Code::Blocks, go to File menu -> Select New and create an Empty file.
+* Now write your C++ program in this empty file and save the file with a ‘.cpp’ extension.
+* After saving the file with ‘.cpp’ extension, go to Build menu and choose the Build and Run option.
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+3. C++ Compilation Process (Refer CPP_Basics.pdf)
+
+--------------------------------------------------
+$ vi filename.c
+$ gcc –Wall filename.c –o filename // Option ­Wall enables all compiler’s warning, ­o is used to specify output file name
+$ ./filename // To execute program
+--------------------------------------------------
+
+Compiler converts a C program into an executable. There are four phases for a C program to become an executable
+$gcc –Wall –save­temps filename.c –o filename  // We get the all intermediate files in the current directory along with the executable
+
+["PCAL" => "isoBinaryExe"]
+
+Pre­processing => Output : filename.i 
+------------------------------------
+* Removal of Comments
+* Expansion of Macros
+* Expansion of the included files.
+* The preprocessed output is stored in the filename.i
+Refer CPP_Basics.pdf for preprocessors   directives
+
+Compilation => Output : filename.s
+-----------------------------------
+The next step is to compile filename.i and produce an intermediate compiled output file
+filename.s . This file is in assembly level instructions.
+
+Assembly => Output : filename.o
+-------------------------------
+In this phase the filename.s is taken as input and turned into filename.o by assembler. 
+This file contain machine level instructions. 
+At this phase, only existing code is converted into machine language, the function calls like
+printf() are not resolved.
+
+Linking => Output : filename
+----------------------------
+This is the final phase in which all the linking of function calls with their definitions are
+done. Linker knows where all these functions are implemented. 
+
+Linker does some extra work also, it adds some extra code to our program which is
+required when the program starts and ends. 
+For example, there is a code which is required for setting up the environment like
+passing command line arguments. 
+
+Linker task can be easily verified by using 
+$size filename.o  
+$size filename
+Through these commands, we know that how output file increases from an object file to an
+executable file.
+
+Note that GCC by default does dynamic linking, so printf() is dynamically linked in above
+program.
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+4. Primitive Types & Variables
+All variables use data-type during declaration to restrict the type of data to be stored.
+Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data-type with which it is declared. Every data type requires different amount of memory.
+
+Primitive Data Types: 
+=====================
+These data types are built-in or predefined data types and can be used directly by the user to declare variables. 
+* Integer
+* Character
+* Boolean
+* Floating Point
+* Double Floating Point
+* Valueless or Void
+* Wide Character
+
+Abstract or user defined data type:
+===================================
+These data types are defined by user itself. Like, defining a class in C++ or a structure.
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+5. Basic Input/Output 
+C++ comes with libraries which provides us many ways for performing input and output. In C++ input and output is performed in the form of sequence of bytes or more commonly known as streams.
+
+Input Stream: 
+-------------
+If the direction of flow of bytes is from device(for example: Keyboard) to the main memory then this process is called input.
+
+Output Stream: 
+--------------
+If the direction of flow of bytes is opposite, i.e. from main memory to device( display screen ) then this process is called output.
+
+Header files available in C++ for Input – Output operation are:
+
+* iostream: 
+	iostream stands for standard input output stream. This header file contains definitions to objects like cin, cout, cerr etc.
+* iomanip: 
+	iomanip stands for input output manipulators. The methods declared in this files are used for manipulating streams. This file contains definitions of setw, setprecision etc.
+* fstream: 
+	This header file mainly describes the file stream. This header file is used to handle the data being read from a file as input or data being written into the file as output.
+
+Standard output stream (cout): 
+Usually the standard output device is the display screen. cout is the instance of the ostream class. cout is used to produce output on the standard output device which is usually the display screen. The data needed to be displayed on the screen is inserted in the standard output stream (cout) using the insertion operator (<<). 
+
+standard input stream (cin): 
+Usually the input device is the keyboard. cin is the instance of the class istream and is used to read input from the standard input device which is usually keyboard.
+The extraction operator(>>) is used along with the object cin for reading inputs. The extraction operator extracts the data from the object cin which is entered using the keboard.
+
+Un-buffered standard error stream (cerr): 
+cerr is the standard error stream which is used to output the errors. This is also an instance of the ostream class. As cerr is un-buffered so it is used when we need to display the error message immediately. It does not have any buffer to store the error message and display later. 
+
+buffered standard error stream (clog): 
+This is also an instance of ostream class and used to display errors but unlike cerr the error is first inserted into a buffer and is stored in the buffer until it is not fully filled. The error message will be displayed on the screen too. 
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+6. Functions Basics & Overview of Debugging
+https://code.visualstudio.com/docs/languages/cpp
+https://code.visualstudio.com/docs/cpp/config-wsl
+
+* Functions
+* Default arguments
+* Inline functions
+* Inline vs macros - Example code pending
+* Return from void function in C++
+* Return multiple values from function - tuple & pair
+	Tuple
+	A tuple is an object capable to hold a collection of elements where each element can be of a different type.
+	Class template std::tuple is a fixed-size collection of heterogeneous values
+
+	Pair
+	This class couples together a pair of values, which may be of different types
+	A pair is a specific case of a std::tuple with two elements
+
+Assignments:
+------------
+* Ceil & floor function (libs/stdc++.h) (cmath)
+* atol(), atoll() and atof() functions in C/C++
+* Swap in C++
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+7. Uniform Initialization (C++11)
+Uniform initialization is a feature in C++ 11 that allows the usage of a consistent syntax to initialize variables and objects ranging from 
+primitive type to aggregates. In other words, it introduces brace-initialization that uses braces ({}) to enclose initializer values
+	
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+8. Pointers & Reference 
+(Refer folder 8_Pointers_and_References)
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+9. Reference Vs Pointer 
+(Refer folder 8_Pointers_and_References)
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+10. Const Qualifier & Compound Types
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+11. Automatic Type Inference (C++11)
+Type inference or deduction refers to the automatic detection of the data type of an expression in a programming language. 
+In C++, the auto keyword(added in C++ 11) is used for automatic type deduction. 
+For example, you want to create an iterator to iterate over a vector, you can simply use auto for that purpose. 
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+12. Range-Based Loop 
+Range-based for loop in C++ is added since C++ 11. It executes a for loop over a range. 
+Used as a more readable equivalent to the traditional for loop operating over a range of values, such as all elements in a container.
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+13. Function Overloading 
+(Refer 13_Function_Overloading)
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+14. Default Function Arguments 
+A default argument is a value provided in a function declaration that is automatically assigned by the compiler 
+if the caller of the function doesn’t provide a value for the argument with a default value
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+15. Inline Functions 
+C++ provides an inline functions to reduce the function call overhead. Inline function is a function that is expanded in line when it is called. 
+When the inline function is called whole code of the inline function gets inserted or substituted at the point of inline function call. 
+This substitution is performed by the C++ compiler at compile time. Inline function may increase efficiency if it is small.
+
+inline return-type function-name(parameters)
+{
+    // function code
+}  
+
+Remember, inlining is only a request to the compiler, not a command. Compiler can ignore the request for inlining. Compiler may not perform inlining in such circumstances like:
+1) If a function contains a loop. (for, while, do-while)
+2) If a function contains static variables.
+3) If a function is recursive.
+4) If a function return type is other than void, and the return statement doesn’t exist in function body.
+5) If a function contains switch or goto statement.
+
+Inline functions provide following advantages:
+1) Function call overhead doesn’t occur.
+2) It also saves the overhead of push/pop variables on the stack when function is called.
+3) It also saves overhead of a return call from a function.
+4) When you inline a function, you may enable compiler to perform context specific optimization on the body of function. Such optimizations are not possible 
+for normal function calls. Other optimizations can be obtained by considering the flows of calling context and the called context.
+5) Inline function may be useful (if it is small) for embedded systems because inline can yield less code than the function call preamble and return.
+
+Inline function disadvantages:
+------------------------------
+1) The added variables from the inlined function consumes additional registers, After in-lining function if variables number which are going to use register 
+increases than they may create overhead on register variable resource utilization. This means that when inline function body is substituted at the point of function call, 
+total number of variables used by the function also gets inserted. So the number of register going to be used for the variables will also get increased. 
+So if after function inlining variable numbers increase drastically then it would surely cause an overhead on register utilization.
+
+2) If you use too many inline functions then the size of the binary executable file will be large, because of the duplication of same code.
+
+3) Too much inlining can also reduce your instruction cache hit rate, thus reducing the speed of instruction fetch from that of cache memory to that of primary memory.
+
+4) Inline function may increase compile time overhead if someone changes the code inside the inline function then all the calling location has to be 
+recompiled because compiler would require to replace all the code once again to reflect the changes, otherwise it will continue with old functionality.
+
+5) Inline functions may not be useful for many embedded systems. Because in embedded systems code size is more important than speed.
+
+6) Inline functions might cause thrashing because inlining might increase size of the binary executable file. Thrashing in memory causes performance of computer to degrade.
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+16. Function Pointers 
+Like normal data pointers (int *, char *, etc), we can have pointers to functions
+* Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.
+* Unlike normal pointers, we do not allocate de-allocate memory using function pointers.
+* Many object oriented features in C++ are implemented using function pointers in C. For example virtual functions
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+17. Namespace
+Namespaces allow us to group named entities that otherwise would have global scope into narrower scopes, giving them namespace scope. 
+This allows organizing the elements of programs into different logical scopes referred to by names.
+Namespace is a feature added in C++ and not present in C.
+
+A namespace is a declarative region that provides a scope to the identifiers (names of the types, function, variables etc) inside it.
+Multiple namespace blocks with the same name are allowed. All declarations within those blocks are declared in the named scope.
+
+Accessing and creating header file
+Extending namespace and Unnamed namespace
+
+Different ways to access namespace
+1. Scope resolution operator
+2. “using” directive
+
+Nested Namespaces
+Namespace Aliasing
+Inline namespaces
+
+Use of Inline and using directive in nested classes
+
