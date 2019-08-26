@@ -1,0 +1,13 @@
+*** Note ***
+
+Inheritence:
+===========
+1. What all is inherited from parent class in C++?
+2. Virtual Functions and Runtime Polymorphism in C++ - Done
+3. Multiple Inheritance in C++ - Diamond Problem
+4. What happens when more restrictive access is given to a derived class method in C++?
+5. Object Slicing in C++
+6. Hiding of all overloaded methods in base class
+7. Inheritance and friendship
+8. Simulating final class
+
