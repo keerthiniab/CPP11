@@ -1,0 +1,44 @@
+*** Note ***
+
+Operator Overloading:
+=====================
+1. Operator Overloading
+2. Copy constructor vs assignment operator
+3. When should we write our own assignment operator?
+	We can handle the above problem in two ways.
+	1) Do not allow assignment of one object to other object. We can create our own dummy assignment operator and make it private.
+	2) Write your own assignment operator that does deep copy.
+
+4. Operators that cannot be overloaded
+5. Conversion Operators
+6. Is assignment operator inherited?
+7. Default Assignment Operator and References
+	Compiler doesn’t creates default assignment operator in following cases
+	1. Class has a nonstatic data member of a const type or a reference type
+	2. Class has a nonstatic data member of a type which has an inaccessible copy assignment operator
+	3. Class is derived from a base class with an inaccessible copy assignment operator
+
+8. Overloading stream insertion (<<) and extraction (>>) operators
+	We must know following things before we start overloading these operators.
+	1) cout is an object of ostream class and cin is an object istream class
+	2) These operators must be overloaded as a global function. And if we want to allow them to access 
+
+9. Overloading array index operator []
+	1) Overloading of [] may be useful when we want to check for index out of bound.
+	2) We must return by reference in function because an expression like “arr[i]” can be used an lvalue.
+
+Type Conversions:
+=================
+1. Concept
+2. Primitive to User Type
+
+Initialization Vs. Assignment
+=============================
+
+Smart Pointers & its Usage (C++ 11)
+===================================
+    	* auto_ptr
+   	* unique_ptr
+   	* shared_ptr
+  	* weak_ptr
+

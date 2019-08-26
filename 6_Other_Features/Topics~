@@ -1,0 +1,53 @@
+*** Note ***
+
+Virtual
+=======
+1. Virtual Functions and Runtime Polymorphism
+	* What is the use?
+	* Static Linkage & Dyanamic Linkage
+	* vtable , vptr
+2. Default arguments and virtual function
+3. Virtual functions in derived classes
+4. Can static functions be virtual?
+5. Virtual Destructor
+6. Virtual Constructor
+7. Virtual Copy Constructor
+8. RTTI (Run-time type information)
+9. Can virtual functions be private?
+10. Inline virtual function
+11. Pure Virtual Functions and Abstract Classes
+	* A class is abstract if it has at least one pure virtual function.
+	* We can have pointers and references of abstract class type.
+	* If we do not override the pure virtual function in derived class, then derived class also becomes abstract class
+	* An abstract class can have constructors
+	* Interface vs Abstract Classes:
+12. Pure virtual destructor
+
+======================================================================
+======================================================================
+
+Enums:
+======
+o	Basics
+o	Scoped Enums C++11
+
+Strings:
+======== 
+o	Raw Strings
+o	std::string
+
+Constant Expressions - constexpr (C++11)
+
+std::initializer_list (C++11) 
+
+Dynamic Array (std::vector) 
+
+Inheritance & Composition 
+Inheritance & Access Modifiers 
+Inheriting Constructors of C++11)
+
+Override & final specifier in C++11 
+Upcasting &Downcasting
+RTTI 
+Abstract Class 
+Multiple (Diamond) Inheritance 
