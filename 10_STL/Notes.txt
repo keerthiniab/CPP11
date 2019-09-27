@@ -1,0 +1,78 @@
+The C++ Standard Template Library (STL)
+========================================
+The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. 
+It is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized. 
+A working knowledge of template classes is a prerequisite for working with STL.
+
+STL has four components
+=======================
+Algorithms
+Containers
+Functions
+Iterators
+
+Algorithm
+=========
+Sorting
+Searching
+Important STL Algorithms
+
+Containers
+==========
+Sequence Containers: implement data structures which can be accessed in a sequential manner.
+--------------------------------------------------------------------------------------------
+vector
+list
+deque
+arrays
+forward_list( Introduced in C++11)
+
+Container Adaptors : provide a different interface for sequential containers.
+-----------------------------------------------------------------------------
+queue
+priority_queue
+stack
+
+Associative Containers : implement sorted data structures that can be quickly searched (O(log n) complexity).
+-------------------------------------------------------------------------------------------------------------
+set
+multiset
+map
+multimap
+
+Unordered Associative Containers : implement unordered data structures that can be quickly searched
+----------------------------------------------------------------------------------------------------
+unordered_set (Introduced in C++11)
+unordered_multiset (Introduced in C++11)
+unordered_map (Introduced in C++11)
+unordered_multimap (Introduced in C++11)
+
+Functions
+=========
+
+The STL includes classes that overload the function call operator. Instances of such classes are called function objects or functors. 
+Functors allow the working of the associated function to be customized with the help of parameters to be passed.
+* Functors
+
+Functors in C++
+----------------
+Please note that the title is Functors (Not Functions)!!
+
+Consider a function that takes only one argument. However, while calling this function we have a lot more information that we would like to pass to this function, 
+but we cannot as it accepts only one parameter. What can be done?
+
+One obvious answer might be global variables. However, good coding practices do not advocate the use of global variables and say they must be used only when there is no other alternative.
+
+Functors are objects that can be treated as though they are a function or function pointer. 
+Functors are most commonly used along with STLs in a scenario like following:
+
+Below program uses transform() in STL to add 1 to all elements of arr[].
+
+Iterators
+=========
+As the name suggests, iterators are used for working upon a sequence of values. They are the major feature that allow generality in STL.
+* Iterators
+Iterators in C++ STL
+---------------------
+Iterators are used to point at the memory addresses of STL containers. 
+They are primarily used in sequence of numbers, characters etc. They reduce the complexity and execution time of program.
