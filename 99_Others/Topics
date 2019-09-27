@@ -1,0 +1,66 @@
+*** Note ***
+
+1. Function Pointers - d
+
+2. Smart Pointers -d
+     	* auto_ptr 
+exclusive ownership model i.e. two pointers of same type can’t point to the same resource at the same time. As shown in below program, copying or assigning of pointers changes the ownership i.e. source pointer has to give ownership to the destination pointer.
+
+   	* unique_ptr
+unique_ptr is a new facility with a similar functionality, but with improved security
+It explicitly prevents copying of its contained pointer as would happen with normal assignment i.e. it allows exactly one owner of the underlying pointer.
+
+   	* shared_ptr
+It is a reference counting ownership model - A shared_ptr is a container for raw pointers
+
+Reference Counting: It is a technique of storing the number of references, pointers or handles to a resource such as an object, block of memory, disk space or other resources.
+
+  	* weak_ptr
+A weak_ptr is created as a copy of shared_ptr. It provides access to an object that is owned by one or more shared_ptr instances, but does not participate in reference counting
+
+The existence or destruction of weak_ptr has no effect on the shared_ptr or its other copies
+
+3. Types of casting - d
+	* Static Cast
+	* Dynamic Cast
+	* Const Cast
+	* Reinterpret Cast
+
+4. Lambda Expressions - dp
+	Callbacks Revisited - Function Pointers 
+	Callbacks - Function Objects 
+	Lambda Expressions 
+	Lambda Expressions Capture List
+
+* lambda—is a convenient way of defining an anonymous function object (a closure) right at the 
+location where it is invoked or passed as an argument to a function
+* C++ 11 introduced lambda expression to allow us write an inline function which can be used for 
+short snippets of code that are not going to be reuse and not worth naming
+* Generally return-type in lambda expression are evaluated by compiler itself and we don’t need to 
+specify that explicitly and -> return-type part can be ignored but in some complex case as in 
+conditional statement, compiler can’t make out the return type and we need to specify that.
+
+5. C++ Concurrency Basics 
+	Concurrency Source Code 
+	Concurrency Basics 
+	Thread Creation (std::thread) 
+	Passing Arguments To Threads 
+	Thread Synchronization (std::mutex) 
+	std::thread Functions & std::this_thread Namespace
+
+6. Constant Expressions - constexpr (C++11) - d(sample programs)
+
+7. Perfect Forwarding - (C++11) 
+8. std::move Function (C++11)
+ 
+9. Class Template Partial Specialization 
+10. Typedef, Type Alias & Alias Templates (C++11) 
+
+11. Inheritance & Composition 
+12. Inheriting Constructors of C++11)
+13. Override & final specifier in C++11 
+
+14. noexcept keyword in C++11
+
+============================================================================
+============================================================================
