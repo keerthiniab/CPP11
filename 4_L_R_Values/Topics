@@ -1,0 +1,8 @@
+*** Note ***
+
+L-values, R-values & R-value References (C++11) :
+=================================================
+1. Move Semantics - Concept (C++11) - C++ std library for casting to a rvalue References
+2. Move Semantics - Implementation (C++11) 
+3. Move Semantics - std::move Function (C++11) - move assignment and move constructors
+
