@@ -1,0 +1,14 @@
+*** Note ***
+
+Exception Handling:
+===================
+1. Exception Handling Basics
+	* Separation of Error Handling code from Normal Code
+	* Functions/Methods can handle any exceptions they choose
+	* Grouping of Error Types
+2. Stack Unwinding
+3. Catching base and derived classes as exceptions
+4. Catch block and type conversion
+5. Exception handling and object destruction
+
+
